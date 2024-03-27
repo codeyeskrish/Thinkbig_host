@@ -1,0 +1,305 @@
+*{
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+
+  @import url(
+  'https://fonts.googleapis.com/css2?family=Outfit');
+}
+
+body {
+  background-image: url(../images/About\ us\ DM.png);
+  min-width: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
+}
+
+section {
+  /* margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 50px; */
+  /* border: 1px white solid; */
+  max-width: 1080px;
+  margin: auto;
+
+}
+
+
+header {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+ }
+
+.menu {
+  color: white;
+  margin-left: 90px;
+  font-size: 1.5rem;
+  gap: 3rem;
+  grid-column: 3/5;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  width: 500px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+.home {
+  color: #FAA517;
+}
+
+.b1{
+  justify-self: start;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #04024b;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+
+
+
+footer {
+  background-image: url(../images/Rectangle\ 9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media{
+display: flex;
+gap: 10px;
+list-style: none;
+}
+.copyright {
+  padding-right: 10rem;
+}
+
+
+
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:1fr 300px 300px 300px 300px;
+  gap: 5rem;
+  row-gap: 8rem;
+  margin-bottom: 7rem;
+}
+
+
+.head {
+  font-size: 4rem;
+  font-weight: bold;
+  padding-bottom: 3rem;
+  /* padding-top: 0.2rem; */
+}
+
+.sub{
+  font-size: 1.3rem;
+  padding-bottom: 4rem;
+}
+
+.b2 {
+  color: #FAA517;
+  background-color: #010026;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px 20px 20px 20px;
+  border-width: 2px;
+  border-radius: 50px;
+  border-color: #FAA517;
+  cursor: pointer;
+  transition: background-color 0.4s;
+
+}
+
+.b2:hover {
+  background-color: #FAA517;
+  color: #010026;
+}
+
+.b2:active {
+  background-color: #050088;
+  color: #e08e00;
+}
+
+.box-2 {
+  display: grid;
+}
+
+.image-1 {
+  width: 500px;
+  justify-self: end;
+  align-self: self-start;
+}
+
+/* .image-1.1 {
+  align-self: self-start;
+} */
+
+.box-3 {
+  display: grid;
+}
+
+.image-2 {
+  padding-top: 1rem;
+  width: 250px;
+  justify-self: start;
+  align-self: self-start;
+}
+
+/* .box-4 {
+  display: grid;
+} */
+
+.sub-head-1 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  text-align: end;
+
+}
+
+.content-1 {
+  align-self: self-start;
+  font-size: 1.1rem;
+  text-align: end;
+}
+
+.sub-head-2 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.content-2 {
+  align-self: self-start;
+  font-size: 1.1rem;
+}
+
+.box-6 {
+  display: grid;
+}
+
+.image-3 {
+  width: 250px;
+  justify-self: end;
+}
+
+.box-7 {
+  display: grid;
+}
+
+.image-4 {
+  width: 250px;
+  justify-self: start;
+}
+
+.sub-head-3 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  text-align: end;
+}
+
+.content-3 {
+  align-self: self-start;
+  font-size: 1.1rem;
+  text-align: end;
+}
+
+.sub-head-4 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.content-4 {
+  align-self: self-start;
+  font-size: 1.1rem;
+}
+
+.box-10 {
+  display: grid;
+}
+
+.image-5 {
+  width: 250px;
+  justify-self: end;
+}
+
+.sub-head-5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+}

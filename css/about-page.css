@@ -1,0 +1,328 @@
+*{
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+
+  @import url(
+  'https://fonts.googleapis.com/css2?family=Outfit');
+}
+
+body {
+  background-image: url(../images/About\ us\ DM.png);
+  min-width: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
+}
+
+section {
+  /* margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 50px; */
+  /* border: 1px white solid; */
+  max-width: 1080px;
+  margin: auto;
+
+}
+
+
+header {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+ }
+
+.menu {
+  color: white;
+  margin-left: 90px;
+  font-size: 1.5rem;
+  gap: 3rem;
+  grid-column: 3/5;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  width: 500px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+.about {
+  color: #FAA517;
+}
+
+.b1{
+  justify-self: start;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #04024b;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+
+
+
+footer {
+  background-image: url(../images/Rectangle\ 9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media{
+display: flex;
+gap: 10px;
+list-style: none;
+}
+.copyright {
+  padding-right: 10rem;
+}
+
+
+
+main {
+  display: grid;
+  /* grid-template-rows: 1fr 3fr 2fr 2fr 2fr; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 7rem;
+  grid-template-areas: "a a a a"
+"b b b b"
+"c c c d"
+"e f f f"
+"g g g h"
+"i i i i"
+"j j j j";
+}
+
+
+.about-us-image{
+  width: 100%;
+}
+
+
+.content-1 {
+  text-align: center;
+}
+
+.span {
+  padding-top: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content-2 {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.head-1 {
+  font-weight: bold;
+  padding-left: 20rem;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.content-3 {
+  text-align: justify;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.head-2 {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.content-4 {
+   padding: 1rem;
+   line-height: 1.5;
+
+}
+
+.content-5 {
+  text-align: start;
+  padding-top: 2rem;
+  line-height: 1.5;
+}
+
+.head-3 {
+  font-weight: bold;
+  padding-left: 20rem;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.head-4 {
+  justify-self: center;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: rem;
+}
+
+.content-6{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 6rem;
+}
+
+.sub-content-1 {
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 3rem;
+}
+
+
+.image-2 {
+  justify-self: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 5rem;
+}
+
+.image-3 {
+  padding-bottom: 5rem;
+}
+
+.sub-box {
+  display: grid;
+}
+
+
+.box-1
+.box-2
+.box-3
+.box-4
+.box-5
+.box-6
+.box-7
+.box-8{
+  justify-content: center;
+  align-items: center;
+}
+
+
+.image {
+  width: 200px;
+}
+
+.box-1 {
+  grid-area: a;
+  width: 100%;
+}
+
+.box-2 {
+  grid-area: b;
+
+}
+
+.box-3 {
+  grid-area: c;
+}
+
+.box-4 {
+  grid-area: d;
+}
+
+.box-5 {
+  grid-area: f;
+  text-align: end;
+}
+
+.box-6 {
+  grid-area: e;
+}
+
+.box-7 {
+  grid-area: g;
+}
+
+.box-8 {
+  grid-area: h;
+  padding-top: 3rem;
+}
+
+.box-9 {
+  grid-area: i;
+
+}
+
+.box-10 {
+  grid-area: j;
+}
+

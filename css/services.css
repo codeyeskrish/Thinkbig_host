@@ -1,0 +1,417 @@
+*{
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+
+  @import url(
+  'https://fonts.googleapis.com/css2?family=Outfit');
+}
+
+body {
+  background-image: url(../images/About\ us\ DM.png);
+  min-width: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ line-height: 1.5;
+}
+
+section {
+  /* margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 50px; */
+  /* border: 1px white solid; */
+  max-width: 1080px;
+  margin: auto;
+
+}
+
+
+header {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+ }
+
+.menu {
+  color: white;
+  margin-left: 90px;
+  font-size: 1.5rem;
+  gap: 3rem;
+  grid-column: 3/5;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  width: 500px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+.services {
+  color: #FAA517;
+}
+
+.b1{
+  justify-self: start;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #04024b;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+
+
+
+footer {
+  background-image: url(../images/Rectangle\ 9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media{
+display: flex;
+gap: 10px;
+list-style: none;
+}
+.copyright {
+  padding-right: 10rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "a a a a"
+  "b b b b"
+  "c c c c"
+  "d d d d"
+  "e e e e"
+  "f f f f"
+  "g g g g"
+  "h h h h";
+  row-gap: 5rem;
+}
+
+.box-1 {
+  grid-area: a;
+}
+
+.box-2 {
+  grid-area: b;
+}
+
+.box-3 {
+  grid-area: c;
+}
+
+.box-4 {
+  grid-area: d;
+}
+
+.box-5 {
+  grid-area: e;
+}
+
+.box-6 {
+  grid-area: f;
+}
+
+.box-7 {
+  grid-area: g;
+}
+
+.box-8 {
+  grid-area: h;
+}
+
+.image-4 {
+  width: 100%;
+}
+
+.box-2 {
+  display: grid;
+  grid-template-columns: 2fr  1fr;
+  grid-template-areas: "heading heading heading heading"
+                        "para . image image"
+                        "subhead . image image"
+                        "para2 . image image";
+
+}
+
+.head-1 {
+  text-align: center;
+  padding-bottom: 3rem;
+  grid-area: heading;
+}
+
+.para-1 {
+  grid-area: para;
+  text-align: center;
+}
+ .para-2 {
+  grid-area: para2;
+  text-align: center;
+} 
+.sub-head-1 {
+  /* display: inline-block; */
+  grid-area: subhead;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.sap {
+  grid-area: image;
+  justify-self: end;
+}
+
+.content-1 {
+  text-align: center;
+}
+
+.head-2 {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.box-4 {
+  display: grid;
+  grid-template-columns: 2fr  1fr;
+  grid-template-areas: "a a a a"
+  "b b b c";
+}
+
+.image-1 {
+  width: 30rem;
+  grid-area: b;
+}
+
+.head-3 {
+  text-align: center;
+  padding-bottom: 3rem;
+  grid-area: a;
+}
+
+.content-2 {
+  grid-area: c;
+  text-align: end;
+  align-self: center;
+}
+
+.box-5 {
+  display: grid;
+  grid-template-columns: 2fr  1fr;
+  grid-template-areas: "a a a a"
+  "b b b c"
+  "d e e e";
+}
+
+.head-4 {
+  text-align: center;
+  padding-bottom: 3rem;
+  grid-area: a;
+}
+
+.content-3 {
+  grid-area: b;
+  text-align: start;
+  align-self: center;
+}
+
+.image-2 {
+  grid-area: c;
+  width: 30rem;
+}
+
+.content-4 {
+  grid-area: e;
+  text-align: end;
+  align-self: center;
+}
+
+.image-3 {
+  grid-area: d;
+  width: 30rem;
+}
+
+.sub-box-1 {
+  display: grid;
+  grid-template-columns: 1fr  1fr 1fr 1fr;
+  grid-template-areas: "a a a a"
+  "b b b c"
+  "d e e e"
+  "f f f g"
+  "h i i i";
+}
+
+.head-5 {
+  text-align: center;
+  padding-bottom: 3rem;
+  grid-area: a;
+}
+
+.sub-content-1 {
+  grid-area: b;
+  text-align: start;
+  align-self: center;
+}
+
+.image-5 {
+  grid-area: c;
+  width: 25rem;
+}
+
+.sub-content-2 {
+  grid-area: e;
+  text-align: end;
+  align-self: center;
+}
+
+.image-6 {
+  grid-area: d;
+  width: 15rem;
+}
+
+.sub-content-3 {
+  grid-area: b;
+  text-align: start;
+  align-self: center;
+}
+
+.image-7 {
+  grid-area: c;
+  width: 15rem;
+}
+
+.sub-content-4 {
+  grid-area: e;
+  text-align: end;
+  align-self: center;
+}
+
+.image-8 {
+  grid-area: d;
+  width: 15rem;
+}
+
+.box-7 {
+  display: grid;
+  grid-template-columns: 2fr  1fr;
+  grid-template-areas: "a a a a"
+  "b b b c"
+  "d e e e";
+}
+
+.head-6 {
+  text-align: center;
+  padding-bottom: 3rem;
+  grid-area: a;
+}
+
+.content-5 {
+  grid-area: b;
+  text-align: start;
+  align-self: center;
+}
+
+.image-9 {
+  grid-area: c;
+  width: 25rem;
+}
+
+.content-6 {
+  grid-area: e;
+  text-align: end;
+  align-self: center;
+}
+
+.image-10 {
+  grid-area: d;
+  width: 25rem;
+}
+
+.box-8 {
+  display: grid;
+  grid-template-columns: 2fr  1fr;
+  grid-template-areas: "a a a a"
+  "b b b c";
+}
+
+.head-7 {
+  text-align: center;
+  padding-bottom: 3rem;
+  grid-area: a;
+}
+
+.content-7 {
+  grid-area: b;
+  text-align: start;
+  align-self: center;
+}
+
+.image-11 {
+  grid-area: c;
+  width: 25rem;
+}
