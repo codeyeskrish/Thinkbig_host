@@ -10,7 +10,7 @@
 }
 
 body {
-  background-image: url(../images/About\ us\ DM.png);
+  background-image: url(./images/About\ us\ DM.png);
   min-width: 320px;
   background-repeat: no-repeat;
   background-size: cover;
